@@ -1,0 +1,30 @@
+<h1 mat-dialog-title>Update User</h1>
+<form>
+  <div mat-dialog-content>
+    <img id="user-image" [src]="userImageData">
+    <mat-form-field>
+      <mat-label>First Name</mat-label>
+      <input required type="text" matInput [(ngModel)]="data.firstName" name="firstName">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Last Name</mat-label>
+      <input required type="text" matInput [(ngModel)]="data.lastName" name="lastName">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Email Id</mat-label>
+      <input required type="text" matInput [(ngModel)]="data.email" name="email">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Phone No.</mat-label>
+      <input required type="text" matInput [(ngModel)]="data.phone" name="phone">
+    </mat-form-field>
+  </div>
+  <div mat-dialog-actions>
+    <button mat-raised-button (click)="onNoClick()">Cancel</button>
+    <button mat-raised-button
+            type="submit"
+            color="primary"
+            [mat-dialog-close]="data">
+      Update</button>
+  </div>
+</form>

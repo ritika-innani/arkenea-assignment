@@ -1,0 +1,25 @@
+{
+  "name": "assignment-arkenea",
+  "version": "1.0.0",
+  "description": "Assignment",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/Server.js",
+    "build": "tsc && cp db/config.json dist/db/"
+  },
+  "author": "Ritika",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.17.9",
+    "@types/mongodb": "^3.5.33",
+    "@types/node": "^14.14.7",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongodb": "^3.6.3",
+    "multer": "^1.4.2",
+    "path": "^0.12.7",
+    "tslint": "^6.1.3",
+    "typescript": "^4.0.5"
+  }
+}

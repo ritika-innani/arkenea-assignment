@@ -1,0 +1,33 @@
+<h1 mat-dialog-title>Add User</h1>
+<form>
+<div mat-dialog-content>
+  <mat-form-field>
+    <mat-label>First Name</mat-label>
+    <input required type="text" matInput [(ngModel)]="data.firstName" name="firstName">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Last Name</mat-label>
+    <input required type="text" matInput [(ngModel)]="data.lastName" name="lastName">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Email Id</mat-label>
+    <input required type="text" matInput [(ngModel)]="data.email" name="email">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Phone No.</mat-label>
+    <input required type="text" matInput [(ngModel)]="data.phone" name="phone">
+  </mat-form-field>
+  <label for="myFile">Upload Profile: </label>
+  <input #userImage required id="myFile" name="myFile" type="file"
+         accept="image/jpeg, image/jpg, image/png, application/pdf"
+         (change)="onfileUpload()">
+</div>
+<div mat-dialog-actions>
+  <button mat-raised-button (click)="onNoClick()">Cancel</button>
+  <button mat-raised-button
+          type="submit"
+          color="primary"
+          [mat-dialog-close]="data">
+    Add</button>
+</div>
+</form>

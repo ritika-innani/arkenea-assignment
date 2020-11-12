@@ -1,0 +1,69 @@
+.data-container {
+  width: 60%;
+  height: 100%;
+  margin: auto;
+  overflow-y: auto;
+}
+
+.mat-paginator{
+  width: 60%;
+  margin: auto;
+}
+
+mat-card {
+  height: 100%;
+}
+
+mat-card-content {
+  height: 60% !important;
+  margin-bottom: 0;
+}
+
+mat-card-footer {
+  text-align: center;
+  width: 60%;
+  margin: auto;
+  background: #F7F7F7;
+  padding: .60rem 0;
+}
+
+mat-card h1 {
+  text-align: center;
+}
+
+table {
+  width: 90%;
+  margin: 10px auto 10px;
+}
+
+.page-link.disabled {
+  pointer-events: none;
+  cursor: auto;
+}
+
+.table-footer {
+  justify-content: center;
+  flex-wrap: wrap;
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  border-radius: .25rem;
+  margin: 0;
+}
+
+.page-item {
+  margin-right: 10px;
+}
+
+#delete-button {
+  float: right;
+  width: 30px;
+  height: 20px;
+  line-height: 20px;
+}
+
+#user-name {
+  cursor: pointer;
+  text-decoration: underline;
+  color: blue;
+}
