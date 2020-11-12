@@ -19,8 +19,8 @@ Backend -
 4. Start the Backend Server - `$ npm run start` 
 
 FrontEnd (In another terminal) - 
-1. Install Dependencies - Navigate to client folder `$ cd client` and run `$ npm install`
-2. Setup - From client folder run command `$ npm run build` 
+1. Install Dependencies - Navigate to public folder `$ cd public` and run `$ npm install`
+2. Setup - From public folder run command `$ npm run build` 
 3. Start the Frontend Server - `$ npm run start` 
 
 

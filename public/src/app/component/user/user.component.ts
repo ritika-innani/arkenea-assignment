@@ -31,7 +31,7 @@ export class UserComponent implements OnInit {
   constructor(
     private httpService: HttpService,
     public dialog: MatDialog,
-    private _snackBar: MatSnackBar
+    private snackBar: MatSnackBar
   ) {
   }
 
@@ -126,7 +126,7 @@ export class UserComponent implements OnInit {
   }
 
   showMessage(message){
-    this._snackBar.open(message, null,{
+    this.snackBar.open(message, null,{
       duration: 2000,
       verticalPosition: 'top'
     });
